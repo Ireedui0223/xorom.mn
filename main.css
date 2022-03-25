@@ -143,6 +143,21 @@
 .sponsor {
   width: 100%;
 }
+
+.footer {
+  width: 100%;
+  display: grid;
+  gap: 3%;
+  grid-template-columns: auto auto auto;
+  font-family: "Oswald", sans-serif;
+  background-image: url("footer\ gradient.png");
+  background-size: cover;
+}
+.footer-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 /* :root {
   --margin-1: 2vw;
   --margin-2: 4vw;
