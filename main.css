@@ -1,0 +1,167 @@
+.header {
+  text-align: center;
+}
+.logo {
+  text-align: center;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 92%;
+}
+.sponser > div {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+}
+.sponser > .item1 {
+  grid-area: first;
+}
+.sponser > .item2 {
+  grid-area: second;
+}
+.sponser > .item3 {
+  grid-area: third;
+}
+.sponser > .item4 {
+  grid-area: fourth;
+}
+.sponser > .item5 {
+  grid-area: fifth;
+}
+
+.sponser {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    "first second third"
+    "fourth second fifth";
+  gap: 10px;
+  align-items: center;
+  height: 70%;
+}
+
+.posts {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+.posts > div {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.ad {
+  position: relative;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+}
+
+@media (max-width: 600px) {
+  .sponser {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: nowrap;
+  }
+  .sponser > div {
+    display: block;
+    overflow: hidden;
+  }
+  .posts {
+    display: block;
+    width: 100%;
+    height: 40%;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --content-color: #dcd3d3;
+}
+.content {
+  max-width: 80%;
+  margin: 40px auto;
+  display: grid;
+  gap: 3%;
+  grid-template-columns: 31% 31% 31%;
+}
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: var(--content-color);
+  box-sizing: border-box;
+  border-radius: 24px;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+.grid-img {
+  width: 100%;
+  height: 300px;
+}
+.grid-image {
+  width: 100%;
+}
+.content-title {
+  padding: 5px 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .content {
+    display: block;
+    max-width: 90%;
+    margin: 10px auto;
+  }
+  .grid-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .sponsor {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+.sponsor {
+  width: 100%;
+}
+/* :root {
+  --margin-1: 2vw;
+  --margin-2: 4vw;
+  --margin-3: 8vw;
+  --color-red-1: red;
+  --color-red-dark: #000;
+}
+.image {
+  grid-area: first;
+}
+.text {
+  grid-area: second;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-areas:
+    "first"
+    "second";
+  gap: 10px;
+  background-color: lightcoral;
+} */
