@@ -139,12 +139,15 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  .main-footer {
+    display: block;
+  }
 }
 .sponsor {
   width: 100%;
 }
 
-.footer {
+.main-footer {
   width: 100%;
   display: grid;
   gap: 3%;
