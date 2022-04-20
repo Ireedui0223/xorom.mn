@@ -142,6 +142,9 @@
   .main-footer {
     display: block;
   }
+  #nav {
+    display: none;
+  }
 }
 
 .sponsor {
@@ -246,6 +249,7 @@
   display: grid;
   gap: 3%;
   grid-template-columns: 31% 31% 31%;
+  justify-content: center;
 }
 
 .grid-item {
@@ -288,6 +292,9 @@
   .anchor-up {
     display: none;
   }
+  .icons {
+    flex-wrap: wrap;
+  }
 }
 
 .sponsor {
@@ -324,10 +331,3 @@ header>div>div{
   text-align: center;
 
 }
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 92%;
-}
-
