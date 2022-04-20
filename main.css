@@ -139,7 +139,7 @@
     margin-bottom: 10px;
   }
 
-  .main-footer {
+  .footer {
     display: block;
   }
   #nav {
@@ -151,19 +151,10 @@
   width: 100%;
 }
 
-.main-footer {
-  width: 100%;
-  display: grid;
-  gap: 3%;
-  grid-template-columns: auto auto auto;
-  font-family: "Oswald", sans-serif;
-  background-image: url("footer\ gradient.png");
-  background-size: cover;
-}
-
 .footer-item {
   padding-top: 30px;
   padding-bottom: 30px;
+  text-align: center;
 }
 
 /* :root {
@@ -190,7 +181,6 @@
 } */
 
 .footer {
-  /* display: ; */
   gap: 3%;
   grid-template-columns: auto auto auto;
   font-family: "Oswald", sans-serif;
@@ -200,10 +190,8 @@
   padding-bottom: 30px;
   padding-left: 40px;
   padding-right: 40px;
-}
-
-.footer-item {
-  text-align: center;
+  overflow: hidden;
+  width: 100%;
 }
 
 .contact button {
