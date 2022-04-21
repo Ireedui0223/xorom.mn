@@ -157,40 +157,14 @@
   text-align: center;
 }
 
-/* :root {
-  --margin-1: 2vw;
-  --margin-2: 4vw;
-  --margin-3: 8vw;
-  --color-red-1: red;
-  --color-red-dark: #000;
-}
-.image {
-  grid-area: first;
-}
-.text {
-  grid-area: second;
-}
-
-.gridContainer {
-  display: grid;
-  grid-template-areas:
-    "first"
-    "second";
-  gap: 10px;
-  background-color: lightcoral;
-} */
-
 .footer {
   gap: 3%;
   grid-template-columns: auto auto auto;
   font-family: "Oswald", sans-serif;
-  background-image: url("assets/footer.png");
+  background-color: #d3d3d3;
   background-size: cover;
   padding-top: 70px;
   padding-bottom: 30px;
-  padding-left: 40px;
-  padding-right: 40px;
-  overflow: hidden;
   width: 100%;
 }
 
@@ -224,6 +198,7 @@
   /* For desktop: */
   .footer {
     display: grid;
+    background-image: url("assets/footer.png");
   }
 
   .copyright {
